@@ -14,36 +14,43 @@
     <header>
         <h1>Calculate a weight of an object on a planet</h1>
 
-        <input type="text" id="mass" placeholder="Mass in Kilogram" />
-        <select class="planet">
-            <option value='none'>--select planet-- </option>
-            <option value='earth'>Earth </option>
-            <option value='moon'> Moon </option>
-            <option value='neptune'> Neptune </option>
-            <option value='pluto'> Pluto </option>
-            <option value='uranus'> Uranus </option>
-            <option value='mars'> Mars </option>
-            <option value='mercury'> Mercury </option>
-            <option value='jupitar'> Jupitar </option>
-            <option value='venus'> Venus </option>
-        </select>
-        <button>Calculate weight</button>
+        <form action="">
+            <label for="mass"><input type="text" id="mass" placeholder="Mass in Kilogram" /></label>
+
+            <select class="planet">
+                <option value='none'>--select planet-- </option>
+                <option value='earth'>Earth </option>
+                <option value='moon'> Moon </option>
+                <option value='neptune'> Neptune </option>
+                <option value='pluto'> Pluto </option>
+                <option value='uranus'> Uranus </option>
+                <option value='mars'> Mars </option>
+                <option value='mercury'> Mercury </option>
+                <option value='jupiter'> Jupiter </option>
+                <option value='venus'> Venus </option>
+            </select>
+            <button class="calc-btn">Calculate weight</button>
+        </form>
 
     </header>
     <main>
-        <section class="flex-container">
+        <section class="flex-container hidden">
             <div class="flex-item image">
                 <img class="planet-image" width="400" src='./images/earth.png' class="planet-image" />
             </div>
             <div class="flex-item description">
                 <p class="weight-desc">The weight of the object on <span class="planet-name">Earth</span></p>
-                <p class="weight">10.0 N</p>
+                <p class="weight"></p>
             </div>
 
         </section>
 
 
+        <p class="error">Both Values are required</p>
+
     </main>
+
+
 
     <script src="script.js"></script>
 </body>

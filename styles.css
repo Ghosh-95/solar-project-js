@@ -73,3 +73,16 @@ button {
     text-transform: uppercase;
     font-weight: bolder;
 }
+
+.hidden {
+    display: none;
+}
+
+.error {
+    width: 15rem;
+    background-color: rgba(168, 168, 168, 0.4);
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.6rem 0.8rem;
+}
