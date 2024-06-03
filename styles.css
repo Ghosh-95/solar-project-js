@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/galaxy.gif);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+header {
+    margin: 2rem;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+main {
+    background-color: rgba(168, 168, 168, 0.2);
+    width: 75vw;
+    padding: 1rem;
+}
+
+input,
+select,
+button {
+    font-family: sans-serif;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.description {
+    background-color: rgba(143, 143, 143, 0.253);
+    height: 12rem;
+    width: 27rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.weight-desc,
+.weight {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.weight {
+    background: rgba(143, 143, 143, 0.4);
+    width: 6rem;
+    height: 6rem;
+    margin: 1.5rem auto;
+    border-radius: 100%;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+
+.planet-name {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
